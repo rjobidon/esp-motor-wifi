@@ -28,8 +28,11 @@ No | Qty | Description | Manufacturer | P/N
 1 | 1 | ESP-8266 microcontroller | WeMos | D1 Mini V2.3.0
 2 | 1 | Voltage regulator 3,3V | STMicroelectronics | LD1117AV33
 3 | 1 | Quad half-H driver | Texas Instruments | LD293D
-4 | 2 | DC motor 4,5V | LEGO | 107
-5 | 2 | Battery holder 3 x AA | --- | ---
+4 | 1 | DIP IC socket 16 pins | --- | ---
+5 | 1 | Solderable breadboard | BusBoard Prototype Systems | SB5
+6 | 2 | Screw terminal 4 pins | --- | ---
+7 | 2 | DC motor 4,5V | LEGO | 107
+8 | 2 | Battery holder 3 x AA | --- | ---
 
 ## Circuit
 
