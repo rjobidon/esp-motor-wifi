@@ -8,14 +8,14 @@ In this project, you will learn how to control two DC motors using the ESP-8266 
 
 ## How It Works
 
-We use digital outputs D5, D6, D7 and D8 to drive the 2 motors. Each output produces 3,3 volts and drives one of the four half-H drivers (LD293D). These drivers are able to switch higher power: from 4,5 V to 36 V and up to 600 mA. A small voltage regulator (LD1117AV33) provides a stable 3,3 V to the ESP-8266 from the batteries.
+We use digital outputs D5, D6, D7 and D8 to drive the 2 DC motors. Each output produces 3,3 volts and drives one of the four half-H drivers (LD293D). These drivers are able to switch higher power: from 4,5 V to 36 V and up to 600 mA. A small voltage regulator (LD1117AV33) provides a stable 3,3 V to the ESP-8266 from the batteries.
 
 The half-H drivers (LD293D) has two input voltages: 
 
 * Vcc1: Power to run the integrated circuit (5 V)
 * Vcc2: Power sent to the motors (4,5 V to 36 V)
 
-In this circuit, we use a pair of half-H drivers for each motor. By this way, we can command the DC motor in both directions (backward and forward). 
+In this circuit, we use a pair of half-H drivers for each motor. By this way, we can command the DC motor in both directions (backward and forward). The LD293D has integrated high-speed clamp diodes to suppress inductive transient current from the motors.
 
 The ESP-8266 connects to your Wi-Fi network and a web server provides a web application and accepts commands.
 
@@ -26,10 +26,10 @@ The ESP-8266 connects to your Wi-Fi network and a web server provides a web appl
 No | Qty | Description | Manufacturer | P/N
 ---|-----|-----------|--------------|------------
 1 | 1 | ESP-8266 microcontroller | WeMos | D1 Mini V2.3.0
-2 | 1 | Voltage Regulator 3,3V | STMicroelectronics | LD1117AV33
+2 | 1 | Voltage regulator 3,3V | STMicroelectronics | LD1117AV33
 3 | 1 | Quad half-H driver | Texas Instruments | LD293D
-4 | 2 | DM motor 4,5V | LEGO | 107
-5 | 2 | Battery Holder 3 x AA | --- | ---
+4 | 2 | DC motor 4,5V | LEGO | 107
+5 | 2 | Battery holder 3 x AA | --- | ---
 
 ## Circuit
 
