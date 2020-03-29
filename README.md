@@ -4,7 +4,7 @@
 
 ## Presentation
 
-In this project, you will learn how to control two DC motors using the ESP-8266 via WiFi. Commands can be sent fron a web browser to a web server running on the ESP-8266.
+In this project, you will learn how to control two DC motors using the ESP-8266 via WiFi. Commands can be sent from any web browser to the web server running on your ESP-8266.
 
 ## How It Works
 
@@ -15,7 +15,7 @@ The half-H drivers (LD293D) has two input voltages:
 * Vcc1: Power to run the integrated circuit (5 V)
 * Vcc2: Power sent to the motors (4,5 V to 36 V)
 
-In this circuit, we use a pair of half-H drivers for each motor. By this way, we can command the DC motor in both directions (backward and forward). The LD293D has integrated high-speed clamp diodes to suppress inductive transient current from the motors.
+In this circuit, each pair of half-H drivers controls one motor. By this way, we can drive the motor in both directions (backward and forward). The LD293D has integrated high-speed clamp diodes to suppress inductive transient current from the motors and protect the circuit.
 
 The ESP-8266 connects to your Wi-Fi network and a web server provides a web application and accepts commands.
 
