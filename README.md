@@ -40,6 +40,10 @@ This circuit diagram shows the connection between the ESP-8266 and quadruple hal
 
 ![Circuit](Circuit.png)
 
+## Internet
+
+You can configure port forwarding in your router to route incoming commands from Internet to your ESP-8266. Then, anyone around the world could send commands to your ESP-8266.
+
 ## Code
 
 ```
