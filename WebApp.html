@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ESP8266 Motor Control</title>
+<style>
+    html { overflow:hidden; position:fixed; }
+    html, body { height:100%; width:100%; margin:0px;  }
+    body { font-family: Helvetica; text-align:center; background-color:#008000; overflow:auto; }
+    .d1 { display:table; width: 100%; height:33.3333333333%; }
+    .d2 { display:table-row; width:100%; height:100%; }
+    .d3 { display:table-cell; width:33%; height:100%; float: none; padding:0; vertical-align: middle; }
+    .d4 { position: relative; height:100%; vertical-align:middle; }
+    .d5 { position: absolute; height:100%; right: 0; bottom: 0; left: 0; background-color:#008000; margin-top:40%; }
+    .d5, .d5::after { display: inline-block; vertical-align: middle; }
+    .d5::after { content: ""; height: 100%; }
+    .stop { background-color:#800000; }
+    a, a:visited { font-size:5vw; color:white; text-decoration:none; }
+    a:hover div { background-color:#00CC00; }
+    a:hover .stop { background-color:#CC0000; }
+</style>
+<script>
+function callServer(str) {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {};
+    xhr.open('GET', str);
+    xhr.send()
+}
+</script>
+</head>
+<div class="d1">
+    <div class="d2">
+        <div class="d3">
+            <div class="d4">
+                <a href="#" onclick="callServer('nw');return false;">>
+                <div class="d5">
+                    <br>&#8598;
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="d3">
+            <div class="d4">
+                <a href="/n"onclick="callServer('n');return false;">
+                <div class="d5">
+                    <br>&#8593;
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="d3">
+            <div class="d4">
+                <a href="/ne"onclick="callServer('ne');return false;">
+                <div class="d5">
+                    <br>&#8599;
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="d1">
+    <div class="d2">
+        <div class="d3">
+            <div class="d4">
+                <a href="/w"onclick="callServer('w');return false;">
+                <div class="d5">
+                    <br>&#8592;
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="d3">
+            <div class="d4">
+                <a href="/off"onclick="callServer('off');return false;">
+                <div class="d5 stop">
+                    <br>STOP
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="d3">
+            <div class="d4">
+                <a href="/e"onclick="callServer('e');return false;">
+                <div class="d5">
+                    <br>&#8594;
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="d1">
+    <div class="d2">
+        <div class="d3">
+            <div class="d4">
+                <a href="/sw"onclick="callServer('sw');return false;">
+                <div class="d5">
+                    <br>&#8601;
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="d3">
+            <div class="d4">
+                <a href="/s"onclick="callServer('s');return false;">
+                <div class="d5">
+                    <br>&#8595;
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="d3">
+            <div class="d4">
+                <a href="/se"onclick="callServer('se');return false;">
+                <div class="d5">
+                    <br>&#8600;
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
